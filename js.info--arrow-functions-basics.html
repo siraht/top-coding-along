@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+  let ask = (question, yes, no) => confirm(question) ? yes() : no();
+
+  ask (
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You cancelled the execution.")
+  );
+  </script>
+</body>
+</html>
+
