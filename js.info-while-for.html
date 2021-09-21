@@ -6,29 +6,44 @@
 </head>
 <body>
   <script>
-      outputEvenNumbers: for (let i = 2; i <= 10; i++) {
+      /* outputEvenNumbers: for (let i = 2; i <= 10; i++) {
           if (i % 2 !== 0) continue;
 
           alert(i);
-      }
+      } */
 
-      let i = 0;
+     /*  let i = 0;
       alertNumbers: while (i < 3) {
           alert( `number ${i}!` );
           ++i;
-      }
+      } */
 
-      let o = 0;
+      // Well this one did not work out at all xD
+     /*  let o = 0;
       promptNumberOverOneHundred: do {
         let answer = prompt('', 'Pick a number over one hundred... or die, Mr Bond.');
         if (number.answer > 100) continue;
         else {o = 10};
       } while (o = 0);
+ */
+      /* Pseudocoding Output Prime Numbers
+          Ask user for a number to find primes until
+          If number > 2 && number
+            then set i = 2, i <= number, i++
+              i % 
+      */
 
-      let number;
-      do {
-          
-      } while ();
+      let number = parseInt(prompt('Pick a number, any number!', ));
+      if (number > 2 && number) {
+        findPrime: for (let i = 2; i <= number; i++) {
+          for (let j = 2; j < i; j++) {
+            if (i % j == 0) continue findPrime;
+          }
+          alert(i);
+        }
+      } else {
+        number;
+        }
 
   </script>
 </body>
