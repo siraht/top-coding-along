@@ -16,7 +16,35 @@
         content.textContent = 'This is the glorious text-content!';
         container.appendChild(content);
 
+        const redText = document.createElement('div');
+        redText.classList.add('redText');
+        redText.style.color = 'red';
+        redText.style.marginTop = '1rem';
+        redText.textContent = 'Hey I\'m red!';
+        container.appendChild(redText);
+
+        const blueText = document.createElement('div');
+        blueText.classList.add('blueText');
+        blueText.style.color = 'blue';
+        blueText.style.marginTop = '1rem';
+        blueText.textContent = 'I\'m a blue h3';
+        container.appendChild(blueText);
+
+        const newDiv = document.createElement('div');
+        newDiv.classList.add('blackPink');
+        newDiv.style.cssText = 'background-color: pink; border-style: solid; border-color: black; border-width: 1rem; padding: 1rem;'
+        newDiv.style.marginTop = '1rem';
+
+            const newh1 = document.createElement('h1');
+            newh1.textContent = 'I\'m in a div';
+                newDiv.appendChild(newh1);
+                
+            const newp = document.createElement('p');
+            newp.textContent = 'ME TOO!';
+                newDiv.appendChild(newp);
+        container.appendChild(newDiv);
         
+
     </script>
   </body>
 </html>
